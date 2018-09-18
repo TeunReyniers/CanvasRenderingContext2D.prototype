@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="CanvasRenderingContext2D.prototype.js"></script>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="1000" style="border: 1px black solid"></canvas>
+
+    <script>
+        
+        const canvas = document.getElementById("canvas")
+        const ctx = canvas.getContext("2d")
+        ctx.font = '20px arial'
+        ctx.textAlign = 'left'
+        ctx.textBaseline = 'middle'
+
+        ctx.drawTextOnArc(150, {X:250,Y:250}, 0, "Teun Reyniers")
+        ctx.drawTextOnArc(50, {X:250,Y:250}, 90, "Teun Reyniers")
+        ctx.drawTextOnArc(25, {X:250,Y:250}, 270, "Teun Reyniers")
+        ctx.drawTextOnArc(100, {X:250,Y:250}, 180, "Teun Reyniers")
+
+    </script>
+</body>
+</html>
